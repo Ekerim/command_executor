@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "command_executor"
+version = "0.1.0"
+description = "A simple module that handles running both local and remote CLI commands using cached connections."
+readme = "README.md"
+authors = [
+    { name = "Fredrik Larsson", email = "ekerim@gmail.com" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "fabric",
+    "invoke"
+]
